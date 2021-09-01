@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="css/offer.css"/>
 <link rel="stylesheet" href="css/sale.css"/>
 <link rel="stylesheet" href="css/service.css"/>
+<link rel="stylesheet" href="css/dropdown.css"/>
 </head>
 <body>
 
@@ -47,15 +48,36 @@
      <div class="toggle"></div>
      <!--menu----------------->
      <ul class="menu">
-         <li><a href="#">Home</a></li>
+         <li><a href="index.html#">Home</a></li>
          <li  class="shop"><a href="#" >Shop</a></li>
-         <li><a href="#">Men</a>
+         <div class="dropdown"><li onclick="myFunction1()" class="dropbtn"><a href="#">Men</a>
              <!--lable---->
-             <span class="sale-lable">Sale</span></li></li>
-         <li><a href="#">Women</a>
+             <span class="sale-lable">Sale</span>
+             <div class="dropdown-content1" id="mydropdown1">
+               <a href="link%20pages/Men's%20T-shirt.html">T-shirt</a>
+               <a href="#">Shirt</a>
+               <a href="#">Footwear</a>
+               <a href="#">Wallet</a>
+             </div>
+          </li></div>
+         <div class="dropdown"><li onclick="myFunction2()" class="dropbtn"><a href="#">Women</a>
              <!--lable---->
-             <span class="sale-lable">Sale</span></li>
-         <li><a href="#">Kids</a></li>
+             <span class="sale-lable">Sale</span>
+             <div class="dropdown-content2" id="mydropdown2">
+               <a href="link%20pages/Women's%20T-shirt.html">T-shirt</a>
+               <a href="#">Shirt</a>
+               <a href="#">Footwear</a>
+               <a href="#">Wallet</a>
+             </div>
+          </li></div>
+         <div class="dropdown"><li onclick="myFunction3()" class="dropbtn"><a href="#">Kids</a>
+          <div class="dropdown-content3" id="mydropdown3">
+               <a href="link%20pages/Kid's%20T-shirt.html">T-shirt</a>
+               <a href="#">Shirt</a>
+               <a href="#">Footwear</a>
+               <a href="#">Wallet</a>
+             </div>
+         </li></div>
      </ul>
      <!--right-menu----------->
      <div class="right-menu">
@@ -201,7 +223,7 @@
 
 <div class="feature-heading">
     <strong>Featured Items</strong>
-    <p>We Provide You New Fasion Design Clothes</p>
+    <p> We Provide You New Fasion Design Clothes</p>
 </div>
 
  <!--product-categories-slider---------------------->
@@ -549,8 +571,8 @@
     <!--services-box---------->
     <div class="services-box">
         <em class="fas fa-shipping-fast"></em>
-        <span>Free Shipping</span>
-        <p>Free Shipping for all US order</p>
+        <span>Address</span>
+        <p>abc complex</p>
     </div>
     <!--services-box---------->
     <div class="services-box">
